@@ -1,2 +1,36 @@
 .l-footer {
+  background-color: #00478b;
+  color: white;
+
+  &__inner{
+    max-width: 1200px;
+    padding: 30px 5% 30px;
+    margin: 0 auto;
+
+  }
+
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list{
+    display: flex;
+  }
+
+  &__nav__item{
+
+    margin-left: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &:nth-child(1){
+      margin-left: 0;
+    }
+  }
+
+  &__copyright{
+    text-align: center;
+  }
 }
