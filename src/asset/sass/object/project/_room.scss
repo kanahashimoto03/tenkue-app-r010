@@ -23,6 +23,7 @@
     margin-bottom: 50px;
     font-size: 25px;
     letter-spacing: 2px;
+    color: #222222;
 
     &::after{
       position: absolute;
@@ -63,7 +64,7 @@
 
   &__number{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 32px;
     letter-spacing: 2px;
     margin-bottom: 10px;
   }
@@ -71,6 +72,7 @@
   &__subTitle{
     text-transform: uppercase;
     margin-bottom: 20px;
+    
   }
   
   &__text{
