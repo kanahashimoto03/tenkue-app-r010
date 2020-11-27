@@ -1,12 +1,11 @@
 .l-footer {
-  background-color: #00478b;
-  color: #ffffff;
+  background-color: $color-primary;
+  color: $color-light;
 
   &__inner{
     max-width: 1200px;
     padding: 30px 5% 30px;
     margin: 0 auto;
-
   }
 
   &__container{
@@ -20,13 +19,16 @@
   }
 
   &__nav__item{
-
     margin-left: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
 
     &:nth-child(1){
       margin-left: 0;
+    }
+
+    & > a{
+      color: $color-light;
     }
   }
 
