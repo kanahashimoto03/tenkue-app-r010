@@ -23,29 +23,29 @@
     margin-bottom: 50px;
     font-size: 25px;
     letter-spacing: 2px;
-    color: #222222;
+    color:$color-default;
 
     &::after{
       position: absolute;
       content: "";
-      background-color: darkblue;
+      background-color: $color-primary;
       width: 40px;
       height: 2px;
       bottom: 0;
       left: 50%;
-      transform: translateX(-50%);
-      
+      transform: translateX(-50%); 
     }
   }
-  
-  
-
 
   &__container{
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
     align-items: center;
+    @include sp-layout(){
+      display: block;
+      margin-bottom: 50px;
+    }
     
     &:nth-child(3){
       flex-direction: row-reverse;
@@ -55,7 +55,9 @@
 
   &__item{
     width: calc((100% /2) - 30px);
-
+    @include sp-layout(){
+      width: 100%;
+    }
     & > img{
       width: 100%;
     }
@@ -83,6 +85,10 @@
   &__img{
     width: 50%;
     margin-bottom: 50px;
+    @include sp-layout(){
+      width: 100%;
+      margin-bottom: 25px;
+    }
   }
 
 }
