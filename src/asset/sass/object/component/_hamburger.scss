@@ -8,7 +8,7 @@
       width: 100%;
       height: 100vh;
       background: rgba(0, 0, 0, 0.9);
-      color: #ffffff;
+      color: $color-light;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -27,7 +27,7 @@
     }
 
     &__link {
-      color: #ffffff;
+      color: $color-light;
     }
   }
 }
@@ -47,13 +47,27 @@
   }
 }
 
+.open #navbtn::after {
+  position: absolute;
+  top: 53%;
+  left: 75%;
+  display: block;
+  content: '';
+  width: 52px;
+  height: 52px;
+  margin: -32px 0 0 -32px;
+  border-radius: 10%;
+  border: 2px solid $color-gold;
+  transition: all .75s;
+  }
+
 #navbtn span {
   display: block;
   position: absolute;
   width: 30px;
   height: 2px;
   left: 6px;
-  background: #333;
+  background: $color-default;
   transition: 0.5s all;
 }
 
@@ -76,7 +90,7 @@
 //ナビゲーションボタン(閉じる)//
 
 .open #navbtn span:nth-of-type(1) {
-  background-color: #fff;
+  background-color: $color-light;
   transform: rotate(-45deg);
   top: 15px;
   width: 27px;
@@ -88,7 +102,7 @@
 }
 
 .open #navbtn span:nth-of-type(3) {
-  background-color: #fff;
+  background-color: $color-light;
   transform: rotate(45deg);
   top: 15px;
   width: 27px;
