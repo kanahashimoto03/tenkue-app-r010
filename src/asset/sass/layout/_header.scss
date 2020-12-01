@@ -29,9 +29,18 @@
   &__items {
     display: flex;
   }
-  
+
   &__item {
+    margin-right: 30px;
+  }
+  
+  &__link {
     letter-spacing: 2px;
-    padding: 5px 30px;
+    padding: 8px 15px;
+
+    &:hover {
+      background-color: #EEEEEE;
+      transition: 0.3s;
+    }
   }
 }
