@@ -18,6 +18,11 @@
     padding-top: 75px;
     height: inherit;
 
+    @include tab-layout {
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+
     @include sp-layout {
       padding: 50px 25px 0 25px;
     }
@@ -66,6 +71,10 @@
   &__text {
     text-align: center;
     margin-bottom: 80px;
+
+    @include tab-layout {
+      font-size: 2vw;
+    }
 
     @include sp-layout {
       margin-bottom: 40px;
