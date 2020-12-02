@@ -1,4 +1,4 @@
-@include sp-layout {
+@include tab-layout {
   .l-header {
 
     &__nav {
@@ -42,7 +42,7 @@
   height: 42px;
   cursor: pointer;
 
-  @include sp-layout {
+  @include tab-layout {
     display: block;
   }
 }
