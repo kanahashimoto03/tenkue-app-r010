@@ -14,6 +14,8 @@
       align-items: center;
       visibility: hidden;
       opacity: 0;
+      transition: inherit;
+      transition-duration: 1s;
 
       & li {
         opacity: 0;
@@ -61,14 +63,13 @@
 .open .l-header__nav {
   visibility: visible;
   opacity: 1;
-}
 
-.open .l-header__nav li {
-  opacity: 1;
-  transform: translateX(0);
-  transition: transform 1s ease, opacity .9s ease;
+  & li {
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 1s ease, opacity .9s ease;
+  }
 }
-
 
 //ナビゲーションボタン(開く)//
 #navbtn {
