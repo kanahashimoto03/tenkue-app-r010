@@ -1,3 +1,5 @@
-document.getElementById("navbtn").onclick = function() {
-  document.querySelector('html').classList.toggle('open');
-}
+const isOpen = document.querySelector('#navbtn');
+
+isOpen.addEventListener('click', () => {
+  document.querySelector('body').classList.toggle('open');
+});
