@@ -84,4 +84,15 @@
             margin-bottom: 25px;
         }
     }
+
+    .fadein {
+        opacity: 0;
+        transform: translate(0, 130px);
+        transition: all 2.5s;
+    }
+
+    .fadein.scrollin {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
