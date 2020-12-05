@@ -1,5 +1,6 @@
-const isOpen = document.querySelector('#navbtn');
+const navBtnTrigger = document.querySelector('#navbtn');
+const isActiveNavBtn = document.querySelector('body');
 
-isOpen.addEventListener('click', () => {
-  document.querySelector('body').classList.toggle('is-active');
+navBtnTrigger.addEventListener('click', () => {
+  isActiveNavBtn.classList.toggle('is-active');
 });
