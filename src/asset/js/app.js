@@ -1,5 +1,10 @@
 /*フェードイン*/
-$(window).on('load scroll', function () {
+
+$(window).on('load', function () {
+    $('.fv-fadein').addClass('load');
+});
+
+$(window).on('scroll', function () {
     $('.fadein').each(function () {
         /*要素の位置を取得*/
         let position = $(this).offset().top;
