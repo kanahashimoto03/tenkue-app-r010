@@ -1,2 +1,67 @@
 .p-areaguide {
+
+
+
+    &__mv {
+        background-image: url(/asset/image/areaguide_01.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 60vh;
+    }
+
+    &__inner {
+        padding: 75px 2.5% 150px;
+        max-width: 1024px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__title {
+        color: $color-default;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 26px;
+        margin-bottom: 60px;
+        position: relative;
+
+        &::after {
+            content: "";
+            background-color: #00478b;
+            width: 40px;
+            height: 2px;
+            position: absolute;
+            left: 50%;
+            bottom: -5%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__map {
+        width: 60%;
+        margin: 0 auto 50px;
+        display: block;
+    }
+}
+
+.l-col3 {
+    display: flex;
+    justify-content: space-between;
+
+    &__list {
+        width: 30%;
+    }
 }
