@@ -1,7 +1,5 @@
 .p-areaguide {
 
-
-
     &__mv {
         background-image: url(/asset/image/areaguide_01.jpg);
         background-size: cover;
@@ -16,7 +14,11 @@
         max-width: 1024px;
         margin-right: auto;
         margin-left: auto;
+
+        @include sp-layout(){
+            padding: 50px 5% 70px;
     }
+}
 
     &__title {
         color: $color-default;
@@ -26,6 +28,11 @@
         font-size: 26px;
         margin-bottom: 60px;
         position: relative;
+
+        @include sp-layout(){
+            font-size: 6vw;
+            margin-bottom: 30px;
+        }
 
         &::after {
             content: "";
@@ -43,11 +50,32 @@
         text-align: center;
         font-size: 18px;
         margin-bottom: 30px;
+
+        @include sp-layout(){
+            font-size: 5vw;
+            margin-bottom: 30px;
+            margin-bottom: 15px;
+        }
     }
 
     &__text {
         text-align: center;
         margin-bottom: 60px;
+
+        @include sp-layout(){
+            font-size: 4vw;
+            margin-bottom: 30px;
+
+        }
+    }
+
+    &__textsecond {
+        font-size: 16px;
+
+        @include sp-layout(){
+            font-size: 4vw;
+            margin-top: 15px;
+        }
     }
 
     &__map {
@@ -61,7 +89,16 @@
     display: flex;
     justify-content: space-between;
 
-    &__list {
-        width: 30%;
+    @include sp-layout(){
+        flex-wrap: wrap;
+    }
+}
+
+.l-col3__list {
+    width: 30%;
+
+    @include sp-layout(){
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
