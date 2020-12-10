@@ -1,4 +1,3 @@
-Header
 const navBtnTrigger = document.querySelector('#navbtn');
 const bodyElement = document.querySelector('body');
 
@@ -25,4 +24,3 @@ $(window).on('scroll', function () {
         }
     });
 });
-master
